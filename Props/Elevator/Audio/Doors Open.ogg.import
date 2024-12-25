@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jj2q6n8l2nbi"
+path="res://.godot/imported/Doors Open.ogg-501338b31a713af2d03c1c9d2377bfd7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Props/Elevator/Audio/Doors Open.ogg"
+dest_files=["res://.godot/imported/Doors Open.ogg-501338b31a713af2d03c1c9d2377bfd7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

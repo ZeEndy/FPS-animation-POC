@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsirwwlridemh"
+path="res://.godot/imported/Dry Fire 2.wav-f3f3ebdec4178684f68f965b7ea2da26.sample"
+
+[deps]
+
+source_file="res://Items/P90/Audio/Reload 2/Dry Fire 2.wav"
+dest_files=["res://.godot/imported/Dry Fire 2.wav-f3f3ebdec4178684f68f965b7ea2da26.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

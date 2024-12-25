@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://dei3rk2sdfwfr"]
+
+[ext_resource type="AudioStream" uid="uid://0y33uq8vrxe3" path="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 1.wav" id="1_xbh10"]
+[ext_resource type="AudioStream" uid="uid://di8w0cqri1a8i" path="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 2.wav" id="2_dl5fh"]
+[ext_resource type="AudioStream" uid="uid://brfthl62xuaqo" path="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 3.wav" id="3_epdgd"]
+[ext_resource type="AudioStream" uid="uid://hh4mm8xve3ek" path="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 4.wav" id="4_omnou"]
+[ext_resource type="AudioStream" uid="uid://bi17sclmqgh3h" path="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 5.wav" id="5_uaqn8"]
+[ext_resource type="AudioStream" uid="uid://bpqmfkvegpbiy" path="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 6.wav" id="6_bua0p"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_xbh10")
+stream_1/stream = ExtResource("2_dl5fh")
+stream_2/stream = ExtResource("3_epdgd")
+stream_3/stream = ExtResource("4_omnou")
+stream_4/stream = ExtResource("5_uaqn8")
+stream_5/stream = ExtResource("6_bua0p")

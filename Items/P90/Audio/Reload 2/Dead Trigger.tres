@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://gasmgl186uik"]
+
+[ext_resource type="AudioStream" uid="uid://dfjqsmxklitdr" path="res://Items/P90/Audio/Reload 2/Dead Trigger 1.wav" id="1_sbkvx"]
+[ext_resource type="AudioStream" uid="uid://bc30golm5vrxo" path="res://Items/P90/Audio/Reload 2/Dead Trigger 2.wav" id="2_aytbq"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource("1_sbkvx")
+stream_1/stream = ExtResource("2_aytbq")

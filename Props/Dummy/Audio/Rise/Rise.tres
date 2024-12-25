@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://c2f1uo53psmsd"]
+
+[ext_resource type="AudioStream" uid="uid://dgwp1kj36s40e" path="res://Props/Dummy/Audio/Rise/Rise Final.wav" id="1_fyps1"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_fyps1")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://263vocbtb2im"
+path="res://.godot/imported/Fire 3.wav-f144ec48c93bce151447bf11dad5bf52.sample"
+
+[deps]
+
+source_file="res://Items/P90/Audio/Shoot 2/Files/Fire 3.wav"
+dest_files=["res://.godot/imported/Fire 3.wav-f144ec48c93bce151447bf11dad5bf52.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

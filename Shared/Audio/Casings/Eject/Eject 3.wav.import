@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cddxwkh68mh82"
+path="res://.godot/imported/Eject 3.wav-7cae50d42dd3ca11dde5b04fabca597d.sample"
+
+[deps]
+
+source_file="res://Shared/Audio/Casings/Eject/Eject 3.wav"
+dest_files=["res://.godot/imported/Eject 3.wav-7cae50d42dd3ca11dde5b04fabca597d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpbm6rae5n48b"
+path="res://.godot/imported/Doors Close.ogg-5476e20fdfeaeda710c06d60324b5a4d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Props/Elevator/Audio/Doors Close.ogg"
+dest_files=["res://.godot/imported/Doors Close.ogg-5476e20fdfeaeda710c06d60324b5a4d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

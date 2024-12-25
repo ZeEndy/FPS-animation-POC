@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://dqhjnquv6vu7t"]
+
+[ext_resource type="AudioStream" uid="uid://02875wusp5x7" path="res://Items/P90/Audio/Reload 2/Cock Foward 1.wav" id="1_rwdso"]
+[ext_resource type="AudioStream" uid="uid://c6q1jk5yklpe2" path="res://Items/P90/Audio/Reload 2/Cock Foward 2.wav" id="2_yqa7g"]
+
+[resource]
+playback_mode = 1
+streams_count = 2
+stream_0/stream = ExtResource("1_rwdso")
+stream_1/stream = ExtResource("2_yqa7g")

@@ -1,0 +1,13 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=5 format=3 uid="uid://4gnhrvlswvyn"]
+
+[ext_resource type="AudioStream" uid="uid://d2hp4kjses483" path="res://Items/Alien/Audio/Shoot 2/Files/Mech 1.wav" id="1_f0bv1"]
+[ext_resource type="AudioStream" uid="uid://c2nbt5nvxlcxy" path="res://Items/Alien/Audio/Shoot 2/Files/Mech 2.wav" id="2_4sjs5"]
+[ext_resource type="AudioStream" uid="uid://b5ow7c5di1soc" path="res://Items/Alien/Audio/Shoot 2/Files/Mech 3.wav" id="3_oga5h"]
+[ext_resource type="AudioStream" uid="uid://cshgij6cgljud" path="res://Items/Alien/Audio/Shoot 2/Files/Mech 4.wav" id="4_e70wa"]
+
+[resource]
+streams_count = 4
+stream_0/stream = ExtResource("1_f0bv1")
+stream_1/stream = ExtResource("2_4sjs5")
+stream_2/stream = ExtResource("3_oga5h")
+stream_3/stream = ExtResource("4_e70wa")

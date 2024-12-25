@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bx0bfgsi6p3qf"
+path="res://.godot/imported/Floor Impact 2.wav-8574ff7af31fcfe7e9ce8196f6a75090.sample"
+
+[deps]
+
+source_file="res://Shared/Audio/Casings/Floor/Floor Impact 2.wav"
+dest_files=["res://.godot/imported/Floor Impact 2.wav-8574ff7af31fcfe7e9ce8196f6a75090.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

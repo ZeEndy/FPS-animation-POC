@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bg5ex83ubs8of"
+path="res://.godot/imported/Mag Slide Out Empty 2.wav-df8ead68831001677133936516114865.sample"
+
+[deps]
+
+source_file="res://Items/P90/Audio/Reload 2/Mag Slide Out Empty 2.wav"
+dest_files=["res://.godot/imported/Mag Slide Out Empty 2.wav-df8ead68831001677133936516114865.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c6tktl5l1w3k3"
+path="res://.godot/imported/Bullet Impact 07.wav-b5b6b30c233f04d10af2ab5d695b60e3.sample"
+
+[deps]
+
+source_file="res://Props/Dummy/Audio/Impact/Bullet Impact 07.wav"
+dest_files=["res://.godot/imported/Bullet Impact 07.wav-b5b6b30c233f04d10af2ab5d695b60e3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2ish7kc6ev1w"
+path="res://.godot/imported/Fall 01.wav-887642da248161e4302f147baa09538c.sample"
+
+[deps]
+
+source_file="res://Props/Dummy/Audio/Fall/Fall 01.wav"
+dest_files=["res://.godot/imported/Fall 01.wav-887642da248161e4302f147baa09538c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

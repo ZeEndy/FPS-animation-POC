@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://yflxff6aakw5"]
+
+[ext_resource type="AudioStream" uid="uid://vxg5v8bwrfoc" path="res://Shared/Audio/Casings/Floor/Floor Impact 1.wav" id="1_8p0ho"]
+[ext_resource type="AudioStream" uid="uid://bx0bfgsi6p3qf" path="res://Shared/Audio/Casings/Floor/Floor Impact 2.wav" id="2_qn56c"]
+[ext_resource type="AudioStream" uid="uid://bk8bi886x3da8" path="res://Shared/Audio/Casings/Floor/Floor Impact 3.wav" id="3_olh2l"]
+[ext_resource type="AudioStream" uid="uid://4liwpj2heqd6" path="res://Shared/Audio/Casings/Floor/Floor Impact 4.wav" id="4_rb7u6"]
+[ext_resource type="AudioStream" uid="uid://cqbhvlcteaxvy" path="res://Shared/Audio/Casings/Floor/Floor Impact 5.wav" id="5_87gop"]
+[ext_resource type="AudioStream" uid="uid://dk4oc0srdt1o5" path="res://Shared/Audio/Casings/Floor/Floor Impact 6.wav" id="6_d1ue3"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_8p0ho")
+stream_1/stream = ExtResource("2_qn56c")
+stream_2/stream = ExtResource("3_olh2l")
+stream_3/stream = ExtResource("4_rb7u6")
+stream_4/stream = ExtResource("5_87gop")
+stream_5/stream = ExtResource("6_d1ue3")

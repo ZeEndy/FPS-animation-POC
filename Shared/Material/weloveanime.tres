@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bbltadwm7nea7"]
+
+[ext_resource type="Shader" path="res://Shared/Shader/weloveanime.gdshader" id="1_kee07"]
+
+[sub_resource type="Gradient" id="Gradient_lxtwg"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.138889, 0.166667, 0.194444, 0.305556, 0.333333, 0.361111, 0.472222, 0.5, 0.527778, 0.638889, 0.666667, 0.694444, 0.805556, 0.833333)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0.15, 0.15, 1, 0.166176, 0.166176, 0.166176, 1, 0.164706, 0.164706, 0.164706, 1, 0.247059, 0.247059, 0.247059, 1, 0.288889, 0.288889, 0.288889, 1, 0.290196, 0.290196, 0.290196, 1, 0.498039, 0.498039, 0.498039, 1, 0.539869, 0.539869, 0.539869, 1, 0.541176, 0.541176, 0.541176, 1, 0.74902, 0.74902, 0.74902, 1, 0.79085, 0.79085, 0.79085, 1, 0.792157, 0.792157, 0.792157, 1, 1, 1, 1, 1)
+metadata/_snap_enabled = true
+metadata/_snap_count = 36
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_va8wc"]
+gradient = SubResource("Gradient_lxtwg")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_kee07")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/Alpha = 1.0
+shader_parameter/LightGrad = SubResource("GradientTexture1D_va8wc")

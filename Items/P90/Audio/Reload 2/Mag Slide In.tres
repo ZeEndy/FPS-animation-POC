@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://db4t07ioh20jr"]
+
+[ext_resource type="AudioStream" uid="uid://cndqj7jxmmm2g" path="res://Items/P90/Audio/Reload 2/Mag Slide In 1.wav" id="1_tott2"]
+[ext_resource type="AudioStream" uid="uid://g3jqqxl4udvf" path="res://Items/P90/Audio/Reload 2/Mag Slide In 2.wav" id="2_giqrc"]
+
+[resource]
+playback_mode = 1
+streams_count = 2
+stream_0/stream = ExtResource("1_tott2")
+stream_1/stream = ExtResource("2_giqrc")

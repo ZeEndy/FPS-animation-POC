@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://bpf4mfw06usvh"]
+
+[ext_resource type="AudioStream" uid="uid://wm8apnwi3bu0" path="res://Items/P90/Audio/Reload 2/Mag Tap 1.wav" id="1_nwakp"]
+[ext_resource type="AudioStream" uid="uid://dq7xd4m86oqn3" path="res://Items/P90/Audio/Reload 2/Mag Tap 2.wav" id="2_e8kqi"]
+
+[resource]
+playback_mode = 1
+streams_count = 2
+stream_0/stream = ExtResource("1_nwakp")
+stream_1/stream = ExtResource("2_e8kqi")

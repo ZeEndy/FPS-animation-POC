@@ -1,0 +1,106 @@
+[gd_scene load_steps=18 format=3 uid="uid://2oqr2k08850s"]
+
+[ext_resource type="Script" path="res://Props/Dummy/Dummy.gd" id="1_rtd68"]
+[ext_resource type="PackedScene" uid="uid://bnt2sk4pkr4rt" path="res://Props/Dummy/Model/Dummy.glb" id="1_xrmkw"]
+[ext_resource type="Script" path="res://Shared/Scripts/HurtBox.gd" id="3_tu3vg"]
+[ext_resource type="AudioStream" uid="uid://bhtfkxw3ukprj" path="res://Props/Dummy/Audio/Impact/Impact.tres" id="4_2n5mw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tjisw"]
+size = Vector3(0.325, 0.637117, 0.217224)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k3cu6"]
+size = Vector3(0.155, 0.22, 0.222)
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_k1fnx"]
+animation = &"Die"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sb2wm"]
+animation = &"Hit"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gxubs"]
+animation = &"ResetDummmy"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vuna0"]
+animation = &"Rest"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0pea4"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ccsvu"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_u54un"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_idv7g"]
+advance_mode = 2
+advance_expression = "ResetTimer==0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_475nu"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_t73ay"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_6qpqp"]
+states/Die/node = SubResource("AnimationNodeAnimation_k1fnx")
+states/Die/position = Vector2(405, 198)
+states/Hit/node = SubResource("AnimationNodeAnimation_sb2wm")
+states/Hit/position = Vector2(550, 100)
+states/ResetDummmy/node = SubResource("AnimationNodeAnimation_gxubs")
+states/ResetDummmy/position = Vector2(550, 198)
+states/Rest/node = SubResource("AnimationNodeAnimation_vuna0")
+states/Rest/position = Vector2(405, 100)
+transitions = ["Start", "Rest", SubResource("AnimationNodeStateMachineTransition_0pea4"), "Rest", "Hit", SubResource("AnimationNodeStateMachineTransition_ccsvu"), "Rest", "Die", SubResource("AnimationNodeStateMachineTransition_u54un"), "Die", "ResetDummmy", SubResource("AnimationNodeStateMachineTransition_idv7g"), "ResetDummmy", "Rest", SubResource("AnimationNodeStateMachineTransition_475nu"), "Hit", "Rest", SubResource("AnimationNodeStateMachineTransition_t73ay")]
+graph_offset = Vector2(23, -19)
+
+[node name="Dummy" type="Node3D"]
+script = ExtResource("1_rtd68")
+
+[node name="Model" parent="." instance=ExtResource("1_xrmkw")]
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Model/Armature/Skeleton3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0765454, -0.11976)
+bone_name = "Dummy"
+bone_idx = 0
+
+[node name="Body" type="Area3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17141, 0)
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("3_tu3vg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D/Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.44089e-15, -0.0343162, 0.113617)
+shape = SubResource("BoxShape3D_tjisw")
+
+[node name="HitSound" type="AudioStreamPlayer3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D/Body"]
+stream = ExtResource("4_2n5mw")
+
+[node name="Head" type="Area3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55284, 0)
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("3_tu3vg")
+Multiplier = 1.25
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D/Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.21885e-15, 0.010955, 0.141247)
+shape = SubResource("BoxShape3D_k3cu6")
+
+[node name="HitSound" type="AudioStreamPlayer3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D/Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.381428, 0)
+stream = ExtResource("4_2n5mw")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Model/Armature/Skeleton3D/BoneAttachment3D"]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../Model")
+tree_root = SubResource("AnimationNodeStateMachine_6qpqp")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../Model/AnimationPlayer")
+
+[connection signal="Hit" from="Model/Armature/Skeleton3D/BoneAttachment3D/Body" to="." method="_on_hit"]
+[connection signal="Hit" from="Model/Armature/Skeleton3D/BoneAttachment3D/Head" to="." method="_on_hit"]
+
+[editable path="Model"]

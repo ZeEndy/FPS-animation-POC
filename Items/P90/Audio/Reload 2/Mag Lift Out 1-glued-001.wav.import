@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c5ebmcplmivxo"
+path="res://.godot/imported/Mag Lift Out 1-glued-001.wav-58b278b357c086407482e0289a0e9c33.sample"
+
+[deps]
+
+source_file="res://Items/P90/Audio/Reload 2/Mag Lift Out 1-glued-001.wav"
+dest_files=["res://.godot/imported/Mag Lift Out 1-glued-001.wav-58b278b357c086407482e0289a0e9c33.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

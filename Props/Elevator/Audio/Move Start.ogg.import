@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8qd1hcowyrup"
+path="res://.godot/imported/Move Start.ogg-2bb1197a73081beab4773977c2886cbe.oggvorbisstr"
+
+[deps]
+
+source_file="res://Props/Elevator/Audio/Move Start.ogg"
+dest_files=["res://.godot/imported/Move Start.ogg-2bb1197a73081beab4773977c2886cbe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=120.0
+beat_count=0
+bar_beats=4

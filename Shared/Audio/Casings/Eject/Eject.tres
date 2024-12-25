@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://r4na8gj548jc"]
+
+[ext_resource type="AudioStream" uid="uid://dmjs11hp8r1vy" path="res://Shared/Audio/Casings/Eject/Eject 1.wav" id="1_i0khq"]
+[ext_resource type="AudioStream" uid="uid://gji7drelvtte" path="res://Shared/Audio/Casings/Eject/Eject 2.wav" id="2_wo3j2"]
+[ext_resource type="AudioStream" uid="uid://cddxwkh68mh82" path="res://Shared/Audio/Casings/Eject/Eject 3.wav" id="3_iohem"]
+[ext_resource type="AudioStream" uid="uid://bjgnqdlslru3v" path="res://Shared/Audio/Casings/Eject/Eject 4.wav" id="4_c7p48"]
+[ext_resource type="AudioStream" uid="uid://caviki6t5yfna" path="res://Shared/Audio/Casings/Eject/Eject 5.wav" id="5_bngan"]
+[ext_resource type="AudioStream" uid="uid://bmc1x6fuqrsj8" path="res://Shared/Audio/Casings/Eject/Eject 6.wav" id="6_igb6l"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_i0khq")
+stream_1/stream = ExtResource("2_wo3j2")
+stream_2/stream = ExtResource("3_iohem")
+stream_3/stream = ExtResource("4_c7p48")
+stream_4/stream = ExtResource("5_bngan")
+stream_5/stream = ExtResource("6_igb6l")

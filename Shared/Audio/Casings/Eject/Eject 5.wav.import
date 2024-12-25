@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://caviki6t5yfna"
+path="res://.godot/imported/Eject 5.wav-0644e9b75644f83957d6a3ce5e4a705d.sample"
+
+[deps]
+
+source_file="res://Shared/Audio/Casings/Eject/Eject 5.wav"
+dest_files=["res://.godot/imported/Eject 5.wav-0644e9b75644f83957d6a3ce5e4a705d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

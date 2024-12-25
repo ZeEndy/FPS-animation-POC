@@ -1,0 +1,168 @@
+[gd_scene load_steps=15 format=3 uid="uid://w0dick1ctgs3"]
+
+[ext_resource type="Script" path="res://Shared/Material/world.gd" id="1_b86vk"]
+[ext_resource type="PackedScene" uid="uid://cso2n0xcey1ky" path="res://Player/Player.tscn" id="2_2o1p3"]
+[ext_resource type="PackedScene" uid="uid://c5hvgb7m75mtd" path="res://Level/KillHouse/Level.glb" id="3_y0d61"]
+[ext_resource type="PackedScene" uid="uid://b6jo42s8k1aib" path="res://Items/P90/Item_P90.tscn" id="4_fy7rh"]
+[ext_resource type="AudioStream" uid="uid://ds3j57iynj2ru" path="res://Level/KillHouse/Audio/Ambient/BGLightFlicker.wav" id="4_k5w6k"]
+[ext_resource type="Script" path="res://Level/RandomTimePlayer.gd" id="5_morbi"]
+[ext_resource type="PackedScene" uid="uid://dlxwo24itjv8o" path="res://Props/Door/prop_Door.tscn" id="5_pe2qp"]
+[ext_resource type="PackedScene" uid="uid://dt0edoxvfokpt" path="res://Items/Alien/Item_Alien.tscn" id="6_07k6u"]
+[ext_resource type="PackedScene" uid="uid://2oqr2k08850s" path="res://Props/Dummy/Dummy.tscn" id="7_wymb4"]
+[ext_resource type="LightmapGIData" uid="uid://36bt7stq6ph5" path="res://Level/KillHouse/KHBaked.lmbake" id="8_3pl1x"]
+[ext_resource type="PackedScene" uid="uid://ds28r5mcbr65c" path="res://Props/Elevator/Elevator.tscn" id="10_i8fn5"]
+[ext_resource type="AudioStream" uid="uid://b47roqlg4fa68" path="res://Level/KillHouse/Audio/Ambient/BGAmbiance.wav" id="13_7bqp6"]
+
+[sub_resource type="Environment" id="Environment_gkoap"]
+ssao_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_read_sky_light = false
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 3.95
+volumetric_fog_density = 0.149
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1f3n7"]
+
+[node name="World" type="Node"]
+script = ExtResource("1_b86vk")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_2o1p3")]
+transform = Transform3D(-0.811594, 0, 0.584221, 0, 1, 0, -0.584221, 0, -0.811594, -4.08312, 7.42326, -0.651614)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_gkoap")
+
+[node name="Level" parent="." instance=ExtResource("3_y0d61")]
+
+[node name="Door" parent="Level" index="2"]
+visible = false
+
+[node name="LightAudio" type="AudioStreamPlayer3D" parent="Level/Light" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio" type="AudioStreamPlayer3D" parent="Level/Light_001" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio" type="AudioStreamPlayer3D" parent="Level/Light_002" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio" type="AudioStreamPlayer3D" parent="Level/Light_003" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio" type="AudioStreamPlayer3D" parent="Level/Light_004" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio2" type="AudioStreamPlayer3D" parent="Level/Light_005" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio3" type="AudioStreamPlayer3D" parent="Level/Light_006" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="LightAudio4" type="AudioStreamPlayer3D" parent="Level/Light_007" index="0"]
+stream = ExtResource("4_k5w6k")
+max_distance = 8.0
+bus = &"SFX"
+script = ExtResource("5_morbi")
+
+[node name="PropDoor2" parent="." instance=ExtResource("5_pe2qp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158584, 0, 2.62377)
+physics_material_override = SubResource("PhysicsMaterial_1f3n7")
+
+[node name="P90" parent="." instance=ExtResource("4_fy7rh")]
+transform = Transform3D(2.5162e-09, -0.0575641, 0.998342, -1, -4.37114e-08, 0, 4.36389e-08, -0.998342, -0.0575641, 4.95371, 1.11912, 0.193951)
+freeze = false
+
+[node name="P91" parent="." instance=ExtResource("4_fy7rh")]
+transform = Transform3D(2.5162e-09, -0.0575641, 0.998342, -1, -4.37114e-08, 0, 4.36389e-08, -0.998342, -0.0575641, 4.28911, 1.11912, 0.193951)
+freeze = false
+
+[node name="PropDoor" parent="." instance=ExtResource("5_pe2qp")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 2.52343, 0.000699759, 5.74213)
+
+[node name="ItemAlien" parent="." instance=ExtResource("6_07k6u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.70342, 1.3293, 0.340384)
+
+[node name="ItemAlien2" parent="." instance=ExtResource("6_07k6u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26156, 1.3293, 0.340384)
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.94959, 0, 4.18234)
+
+[node name="Dummy" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, -1.891)
+
+[node name="Dummy2" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 25, 0, -0.373)
+
+[node name="Dummy3" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.5, 0, 0.973)
+
+[node name="Dummy4" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50, 0, 2.41)
+
+[node name="Dummy5" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.0306, 0, -7.97575)
+
+[node name="Dummy6" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -6.69647, 0, -12.0872)
+
+[node name="Dummy7" parent="Node3D" instance=ExtResource("7_wymb4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.00418, 0, -12.1212)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+visible = false
+light_bake_mode = 0
+
+[node name="Elevator2" parent="." instance=ExtResource("10_i8fn5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.28634, 0, -0.009)
+SelectTargets = Array[NodePath]([NodePath("../Marker3D"), NodePath("../Marker3D2")])
+IsStatic = true
+
+[node name="Elevator" parent="." instance=ExtResource("10_i8fn5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.03765, 7.48406, -0.00932503)
+SelectTargets = Array[NodePath]([NodePath("../Marker3D"), NodePath("../Marker3D2")])
+AutoMoveTarget = 1
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.03765, 7.48406, -0.00932503)
+
+[node name="Marker3D2" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.038, 0, -0.009)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_7bqp6")
+autoplay = true
+bus = &"SFX"
+
+[node name="LightmapGI" type="LightmapGI" parent="."]
+quality = 2
+bounces = 8
+use_texture_for_bounces = false
+interior = true
+texel_scale = 2.0
+generate_probes_subdiv = 4
+light_data = ExtResource("8_3pl1x")
+
+[editable path="Level"]

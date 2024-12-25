@@ -1,0 +1,21 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=9 format=3 uid="uid://bhtfkxw3ukprj"]
+
+[ext_resource type="AudioStream" uid="uid://r2fuh2r2hgbr" path="res://Props/Dummy/Audio/Impact/Bullet Impact 01.wav" id="1_thqjh"]
+[ext_resource type="AudioStream" uid="uid://c4x8r6qpt1080" path="res://Props/Dummy/Audio/Impact/Bullet Impact 02.wav" id="2_2jjil"]
+[ext_resource type="AudioStream" uid="uid://cb25gy6d7jphc" path="res://Props/Dummy/Audio/Impact/Bullet Impact 03.wav" id="3_0w6gr"]
+[ext_resource type="AudioStream" uid="uid://dgm04orfg7p4a" path="res://Props/Dummy/Audio/Impact/Bullet Impact 04.wav" id="4_ihvwd"]
+[ext_resource type="AudioStream" uid="uid://cyg43s1gaxpxc" path="res://Props/Dummy/Audio/Impact/Bullet Impact 05.wav" id="5_kr68f"]
+[ext_resource type="AudioStream" uid="uid://bueo0m5wjgkf4" path="res://Props/Dummy/Audio/Impact/Bullet Impact 06.wav" id="6_13hq8"]
+[ext_resource type="AudioStream" uid="uid://c6tktl5l1w3k3" path="res://Props/Dummy/Audio/Impact/Bullet Impact 07.wav" id="7_bq158"]
+[ext_resource type="AudioStream" uid="uid://idyqxm8sk6o3" path="res://Props/Dummy/Audio/Impact/Bullet Impact 08.wav" id="8_yfags"]
+
+[resource]
+streams_count = 8
+stream_0/stream = ExtResource("1_thqjh")
+stream_1/stream = ExtResource("2_2jjil")
+stream_2/stream = ExtResource("3_0w6gr")
+stream_3/stream = ExtResource("4_ihvwd")
+stream_4/stream = ExtResource("5_kr68f")
+stream_5/stream = ExtResource("6_13hq8")
+stream_6/stream = ExtResource("7_bq158")
+stream_7/stream = ExtResource("8_yfags")

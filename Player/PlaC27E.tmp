@@ -1,0 +1,164 @@
+[gd_scene load_steps=7 format=3 uid="uid://cso2n0xcey1ky"]
+
+[ext_resource type="Script" path="res://Shared/Material/character_body_3d.gd" id="1_1gtya"]
+[ext_resource type="PackedScene" uid="uid://dwbc5cv4l5gep" path="res://Items/P90/Item_P90.tscn" id="2_julsg"]
+[ext_resource type="PackedScene" uid="uid://qlfsd6ti1blk" path="res://Player/Assets/Hands.glb" id="3_a2lss"]
+[ext_resource type="Script" path="res://Player/BodySideCopy.gd" id="4_swlmr"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oavyl"]
+radius = 0.35
+height = 1.75
+
+[sub_resource type="BoxMesh" id="BoxMesh_0uu4k"]
+size = Vector3(0.05, 0.05, 0.05)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_1gtya")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.875, 0)
+shape = SubResource("CapsuleShape3D_oavyl")
+
+[node name="Body" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.488, 0)
+
+[node name="Equiped" type="Node3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0407302, -0.303762, 0.086377)
+
+[node name="P90" parent="Body/Equiped" instance=ExtResource("2_julsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0453119)
+
+[node name="CameraHolder" type="Node3D" parent="Body"]
+
+[node name="Hands" parent="Body/CameraHolder" instance=ExtResource("3_a2lss")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0407302, -0.303762, 0.086377)
+
+[node name="GeneralSkeleton" parent="Body/CameraHolder/Hands/godot_rig" index="0"]
+bones/3/rotation = Quaternion(-1.3411e-07, 1.42109e-14, 1.95399e-14, 1)
+bones/4/rotation = Quaternion(1.37836e-07, 1.21431e-17, -2.15383e-14, 1)
+bones/5/rotation = Quaternion(-1.86265e-09, 8.14604e-08, -3.31957e-14, 1)
+bones/6/rotation = Quaternion(-3.20375e-07, -5.96244e-09, 9.05942e-14, 1)
+bones/8/rotation = Quaternion(-1.78814e-07, 1, -5.96046e-08, -1.19209e-07)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/rotation = Quaternion(4.21468e-08, -0.707107, 1.89661e-07, 0.707107)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/rotation = Quaternion(-1.8977e-07, 0.707107, 6.31106e-08, 0.707107)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/position = Vector3(0.026475, -0.088525, 0.00147497)
+bones/11/rotation = Quaternion(2.08616e-07, -8.9407e-08, -2.98023e-08, 1)
+bones/12/rotation = Quaternion(0, -5.96046e-08, 0, 1)
+bones/13/rotation = Quaternion(-5.96046e-08, 0, 0, 1)
+bones/14/rotation = Quaternion(2.23517e-07, -1.04308e-07, 0, 1)
+bones/15/rotation = Quaternion(-2.98023e-08, 2.98023e-08, 2.98023e-08, 1)
+bones/16/rotation = Quaternion(2.98023e-08, 2.98023e-08, 2.98023e-08, 1)
+bones/17/rotation = Quaternion(1.78814e-07, -2.98023e-07, 0, 1)
+bones/18/rotation = Quaternion(-2.98023e-08, -8.9407e-08, -8.9407e-08, 1)
+bones/19/rotation = Quaternion(0, 0, -5.96046e-08, 1)
+bones/20/rotation = Quaternion(2.08616e-07, -2.08616e-07, -2.98023e-08, 1)
+bones/21/rotation = Quaternion(0, 0, 5.96046e-08, 1)
+bones/23/rotation = Quaternion(-0.214187, 0.673887, 0.214187, 0.673887)
+bones/24/rotation = Quaternion(0, -4.47035e-08, -2.98023e-08, 1)
+bones/24/scale = Vector3(1.00001, 0.99999, 0.999999)
+bones/25/rotation = Quaternion(0, 2.98023e-08, -2.98023e-08, 1)
+bones/26/rotation = Quaternion(0.5, -0.5, -0.5, -0.5)
+bones/27/rotation = Quaternion(-2.08616e-07, 1, 2.98023e-08, 2.08616e-07)
+bones/27/scale = Vector3(1, 1, 1)
+bones/28/rotation = Quaternion(-9.48304e-08, 0.707107, 2.63418e-07, 0.707107)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/rotation = Quaternion(-7.17298e-08, -0.707107, -2.65445e-07, 0.707107)
+bones/30/rotation = Quaternion(1.63913e-07, 2.98023e-08, 2.98023e-08, 1)
+bones/32/rotation = Quaternion(2.98023e-08, 2.98023e-08, -2.98023e-08, 1)
+bones/33/rotation = Quaternion(1.78814e-07, 1.19209e-07, 0, 1)
+bones/34/rotation = Quaternion(5.96046e-08, 5.96046e-08, 0, 1)
+bones/35/rotation = Quaternion(2.98023e-08, -2.98023e-08, -2.98023e-08, 1)
+bones/36/rotation = Quaternion(2.08616e-07, 1.49012e-07, 1.49012e-07, 1)
+bones/37/rotation = Quaternion(-2.98023e-08, -8.9407e-08, -1.49012e-07, 1)
+bones/38/rotation = Quaternion(-8.9407e-08, 2.98023e-08, 1.49012e-07, 1)
+bones/39/rotation = Quaternion(1.93715e-07, 7.45058e-08, 8.94069e-08, 1)
+bones/40/rotation = Quaternion(-2.98023e-08, 1.49012e-08, -1.04308e-07, 1)
+bones/42/rotation = Quaternion(-0.214187, -0.673887, -0.214187, 0.673887)
+bones/43/rotation = Quaternion(-1.04308e-07, -1.33227e-15, 8.9407e-08, 1)
+bones/43/scale = Vector3(1.00001, 0.99999, 0.999999)
+bones/44/rotation = Quaternion(-8.9407e-08, -8.9407e-08, -2.98023e-08, 1)
+
+[node name="GunMagazine 2" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="1"]
+visible = false
+
+[node name="SKELETON MODIFIERS" type="Node" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="2"]
+
+[node name="BodyCopyLeft" type="SkeletonModifier3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="3"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0407302, -1.18424, -0.102512)
+rotation_edit_mode = 0
+rotation_order = 2
+top_level = false
+visible = true
+visibility_parent = NodePath("")
+active = true
+influence = 1.0
+script = ExtResource("4_swlmr")
+Target_1_Path = NodePath("")
+IK_target_path = NodePath("../HandL")
+
+[node name="BodyCopyRight" type="SkeletonModifier3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="4"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0407302, -1.18424, -0.102512)
+rotation_edit_mode = 0
+rotation_order = 2
+top_level = false
+visible = true
+visibility_parent = NodePath("")
+active = true
+influence = 1.0
+script = ExtResource("4_swlmr")
+Target_1_Path = NodePath("")
+Side = "Right"
+IK_target_path = NodePath("../HandR")
+
+[node name="HandL" type="SkeletonIK3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="5"]
+root_bone = &"LeftShoulder"
+tip_bone = &"LeftHand"
+target = Transform3D(-0.741716, 0.555658, 0.375634, 0.669223, 0.575799, 0.469676, 0.0446898, 0.59975, -0.798939, -0.036749, -0.134988, -0.209229)
+magnet = Vector3(-0.29, 0, 0)
+min_distance = 0.0
+
+[node name="HandR" type="SkeletonIK3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="6"]
+root_bone = &"RightShoulder"
+tip_bone = &"RightHand"
+target = Transform3D(0.808297, 0.514432, -0.286383, -0.579201, 0.782111, -0.229844, 0.105744, 0.351655, 0.930138, 0.0552562, -0.013895, -0.210193)
+min_distance = 0.0
+max_iterations = 20
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="7"]
+transform = Transform3D(-2.08926e-07, 1, 4.47034e-07, 2.4587e-07, 4.47034e-07, -1, -1, -2.08926e-07, -2.4587e-07, -0.672046, 0.186357, 0.0183906)
+bone_name = "LeftHand"
+bone_idx = 10
+
+[node name="ShoulderPoint" type="Marker3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.127117, 0.212897, -0.0265635)
+
+[node name="Camera3D" type="Camera3D" parent="Body/CameraHolder"]
+current = true
+fov = 100.0
+near = 0.01
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Body/CameraHolder"]
+mesh = SubResource("BoxMesh_0uu4k")
+
+[editable path="Body/CameraHolder/Hands"]

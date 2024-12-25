@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://567kn4j30dgp"
+path="res://.godot/imported/Move Loop.ogg-5a5aa1ebb5842f7e8d6d546e65836c9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Props/Elevator/Audio/Move Loop.ogg"
+dest_files=["res://.godot/imported/Move Loop.ogg-5a5aa1ebb5842f7e8d6d546e65836c9f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=120.0
+beat_count=0
+bar_beats=4

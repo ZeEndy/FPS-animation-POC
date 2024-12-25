@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://nqkn7tm3ejrl"]
+
+[ext_resource type="AudioStream" uid="uid://bicudw78ypxso" path="res://Items/P90/Audio/Reload 2/Mag Lift Out 1.wav" id="1_vfe5v"]
+[ext_resource type="AudioStream" uid="uid://c3d1dh6joqqu2" path="res://Items/P90/Audio/Reload 2/Mag Lift Out 2.wav" id="2_322j0"]
+
+[resource]
+playback_mode = 1
+streams_count = 2
+stream_0/stream = ExtResource("1_vfe5v")
+stream_1/stream = ExtResource("2_322j0")

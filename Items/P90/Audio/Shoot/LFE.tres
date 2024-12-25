@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://c0sw25elg7py1"]
+
+[ext_resource type="AudioStream" uid="uid://sst2dybp0121" path="res://Items/P90/Audio/Shoot 2/Files/LFE.wav" id="1_jvly3"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_jvly3")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clsj8oorkacok"
+path="res://.godot/imported/Hammer Drop.wav-9b558db55b1844c2e7c87127e066b289.sample"
+
+[deps]
+
+source_file="res://Items/Alien/Audio/Shoot 2/Files/Hammer Drop.wav"
+dest_files=["res://.godot/imported/Hammer Drop.wav-9b558db55b1844c2e7c87127e066b289.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

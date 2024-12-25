@@ -1,0 +1,13 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=5 format=3 uid="uid://drfsysa1t4sfv"]
+
+[ext_resource type="AudioStream" uid="uid://cc7axdpi0s4k0" path="res://Items/P90/Audio/Shoot 2/Files/Mech 1.wav" id="1_tobw7"]
+[ext_resource type="AudioStream" uid="uid://h7xxp5lbgavv" path="res://Items/P90/Audio/Shoot 2/Files/Mech 2.wav" id="2_3bonq"]
+[ext_resource type="AudioStream" uid="uid://crlmcxyqrpbg3" path="res://Items/P90/Audio/Shoot 2/Files/Mech 3.wav" id="3_88fj4"]
+[ext_resource type="AudioStream" uid="uid://cpjfmmytmon7h" path="res://Items/P90/Audio/Shoot 2/Files/Mech 4.wav" id="4_ktwkn"]
+
+[resource]
+streams_count = 4
+stream_0/stream = ExtResource("1_tobw7")
+stream_1/stream = ExtResource("2_3bonq")
+stream_2/stream = ExtResource("3_88fj4")
+stream_3/stream = ExtResource("4_ktwkn")

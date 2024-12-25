@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c31kqcuu8n5yi"
+path="res://.godot/imported/Walk Concrete 6.wav-ca18303228805b809f4468e5b13109bf.sample"
+
+[deps]
+
+source_file="res://Player/Audio/Footstep/Concrete/Walk/Walk Concrete 6.wav"
+dest_files=["res://.godot/imported/Walk Concrete 6.wav-ca18303228805b809f4468e5b13109bf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

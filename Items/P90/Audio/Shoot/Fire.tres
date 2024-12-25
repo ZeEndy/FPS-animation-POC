@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://ceuamwfdar045"]
+
+[ext_resource type="AudioStream" uid="uid://2vp3n68qi7up" path="res://Items/P90/Audio/Shoot 2/Files/Fire 1.wav" id="1_i8i75"]
+[ext_resource type="AudioStream" uid="uid://cne1xxqujij4c" path="res://Items/P90/Audio/Shoot 2/Files/Fire 2.wav" id="2_ts6e7"]
+[ext_resource type="AudioStream" uid="uid://263vocbtb2im" path="res://Items/P90/Audio/Shoot 2/Files/Fire 3.wav" id="3_gbs37"]
+[ext_resource type="AudioStream" uid="uid://cthiedwcwesl1" path="res://Items/P90/Audio/Shoot 2/Files/Fire 4.wav" id="4_nkcof"]
+[ext_resource type="AudioStream" uid="uid://dqm6d1frh4mir" path="res://Items/P90/Audio/Shoot 2/Files/Fire 5.wav" id="5_4ic8d"]
+[ext_resource type="AudioStream" uid="uid://pu1olhfcihhy" path="res://Items/P90/Audio/Shoot 2/Files/Fire 6.wav" id="6_xi1hd"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_i8i75")
+stream_1/stream = ExtResource("2_ts6e7")
+stream_2/stream = ExtResource("3_gbs37")
+stream_3/stream = ExtResource("4_nkcof")
+stream_4/stream = ExtResource("5_4ic8d")
+stream_5/stream = ExtResource("6_xi1hd")

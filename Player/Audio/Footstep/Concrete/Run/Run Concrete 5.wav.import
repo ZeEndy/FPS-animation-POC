@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bi17sclmqgh3h"
+path="res://.godot/imported/Run Concrete 5.wav-88bcb9a7a091cc8ffc7085ce7af60e47.sample"
+
+[deps]
+
+source_file="res://Player/Audio/Footstep/Concrete/Run/Run Concrete 5.wav"
+dest_files=["res://.godot/imported/Run Concrete 5.wav-88bcb9a7a091cc8ffc7085ce7af60e47.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

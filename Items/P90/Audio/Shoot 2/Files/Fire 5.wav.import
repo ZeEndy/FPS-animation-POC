@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqm6d1frh4mir"
+path="res://.godot/imported/Fire 5.wav-224990c50ceab80c6ce9550ab1349756.sample"
+
+[deps]
+
+source_file="res://Items/P90/Audio/Shoot 2/Files/Fire 5.wav"
+dest_files=["res://.godot/imported/Fire 5.wav-224990c50ceab80c6ce9550ab1349756.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

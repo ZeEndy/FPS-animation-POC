@@ -1,0 +1,115 @@
+[gd_scene load_steps=13 format=3 uid="uid://dlxwo24itjv8o"]
+
+[ext_resource type="PackedScene" uid="uid://dbfw2g5wkfpe" path="res://Props/Door/Model/Door.glb" id="1_5xatc"]
+[ext_resource type="Script" path="res://Props/Door/Door.gd" id="1_toboe"]
+[ext_resource type="Script" path="res://Shared/Scripts/ValidSkeleton.gd" id="3_ywo6n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_po2ix"]
+size = Vector3(0.0621948, 1.99707, 1.02893)
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mssxb"]
+animation = &"OpenDoorFront"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_f6tru"]
+animation = &"WaitDoorBack"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iu3cg"]
+animation = &"WaitDoorFront"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qpj85"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ipmao"]
+advance_mode = 2
+advance_expression = "ApproachBack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_e44mq"]
+advance_mode = 2
+advance_expression = "!ApproachBack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_q5o5p"]
+advance_mode = 2
+advance_expression = "User!=null && HandReady"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_iypxa"]
+states/OpenDoorFront/node = SubResource("AnimationNodeAnimation_mssxb")
+states/OpenDoorFront/position = Vector2(627, 50)
+states/WaitDoorBack/node = SubResource("AnimationNodeAnimation_f6tru")
+states/WaitDoorBack/position = Vector2(411, 144)
+states/WaitDoorFront/node = SubResource("AnimationNodeAnimation_iu3cg")
+states/WaitDoorFront/position = Vector2(411, 50)
+transitions = ["Start", "WaitDoorFront", SubResource("AnimationNodeStateMachineTransition_qpj85"), "WaitDoorFront", "WaitDoorBack", SubResource("AnimationNodeStateMachineTransition_ipmao"), "WaitDoorBack", "WaitDoorFront", SubResource("AnimationNodeStateMachineTransition_e44mq"), "WaitDoorFront", "OpenDoorFront", SubResource("AnimationNodeStateMachineTransition_q5o5p")]
+graph_offset = Vector2(-189, -10)
+
+[node name="PropDoor" type="AnimatableBody3D"]
+collision_layer = 5
+script = ExtResource("1_toboe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-2.24203e-08, 0, 1, 0, 1, 0, -1, 0, -2.24203e-08, -0.514, 1.007, -0.00299973)
+shape = SubResource("BoxShape3D_po2ix")
+
+[node name="Door2" parent="." instance=ExtResource("1_5xatc")]
+
+[node name="GeneralSkeleton" parent="Door2/godot_rig" index="0"]
+bones/0/position = Vector3(-0.658561, 0, 0.419259)
+bones/0/rotation = Quaternion(0, 7.10543e-15, 0, 1)
+bones/8/rotation = Quaternion(-0.213815, 0.811265, 0.544123, -0.00789633)
+bones/8/scale = Vector3(1.01513, 0.9704, 1.01514)
+bones/9/rotation = Quaternion(0.176527, -0.714147, 0.424506, 0.527852)
+bones/9/scale = Vector3(1.01022, 0.952257, 1.04052)
+bones/10/rotation = Quaternion(-0.181772, 0.693847, -0.220553, 0.660977)
+bones/10/scale = Vector3(1.00106, 1.02321, 0.97855)
+bones/11/rotation = Quaternion(1.3411e-07, -8.9407e-08, 8.9407e-08, 1)
+bones/12/rotation = Quaternion(2.98023e-07, -1.19209e-07, 0, 1)
+bones/13/rotation = Quaternion(-7.15256e-07, -2.98023e-08, -2.98023e-08, 1)
+bones/14/rotation = Quaternion(1.04308e-07, -1.63913e-07, 1.3411e-07, 1)
+bones/15/rotation = Quaternion(-5.51343e-07, -5.96046e-08, -1.49012e-08, 1)
+bones/16/rotation = Quaternion(0, 0, -5.96046e-08, 1)
+bones/17/rotation = Quaternion(-1.78814e-07, -8.9407e-08, -1.49012e-08, 1)
+bones/18/rotation = Quaternion(-5.51343e-07, 1.19209e-07, 4.47035e-08, 1)
+bones/19/rotation = Quaternion(9.08971e-07, -3.12924e-07, 5.96046e-08, 1)
+bones/19/scale = Vector3(0.999999, 0.99999, 0.999999)
+bones/20/rotation = Quaternion(-2.38419e-07, 5.96046e-08, 1.19209e-07, 1)
+bones/21/rotation = Quaternion(-2.38419e-07, -8.9407e-08, -1.49012e-08, 1)
+bones/22/rotation = Quaternion(1.78814e-07, -1.3411e-07, 2.98023e-08, 1)
+bones/23/rotation = Quaternion(-0.214187, 0.673887, 0.214187, 0.673887)
+bones/24/rotation = Quaternion(-2.23517e-07, -2.38419e-07, 6.25849e-07, 1)
+bones/24/scale = Vector3(1.00001, 0.999985, 0.999999)
+bones/25/rotation = Quaternion(3.72529e-07, 1.3411e-07, -5.96046e-08, 1)
+bones/27/rotation = Quaternion(-0.00954539, 0.751198, 0.659938, 0.00957701)
+bones/27/scale = Vector3(0.987477, 1.02553, 0.987469)
+bones/28/rotation = Quaternion(-0.018496, 0.715661, 0.0307147, 0.697527)
+bones/28/scale = Vector3(0.993263, 1.01355, 0.993324)
+bones/29/rotation = Quaternion(0.0125948, -0.715324, -0.0174439, 0.698462)
+bones/29/scale = Vector3(1.01955, 0.962007, 1.01956)
+bones/42/rotation = Quaternion(-0.214188, -0.673884, -0.214186, 0.67389)
+bones/43/scale = Vector3(1.00001, 0.999989, 0.999999)
+bones/45/rotation = Quaternion(-1.07977e-07, 0.707107, 0.707107, 1.07977e-07)
+bones/46/position = Vector3(0.448706, 0.436015, -0.0600424)
+bones/46/rotation = Quaternion(-0.13199, 0.706296, -0.694679, 0.0338576)
+bones/47/position = Vector3(0.902778, 0.436012, 0.0464)
+bones/47/rotation = Quaternion(-0.135353, -0.706452, 0.694031, 0.0304359)
+bones/48/rotation = Quaternion(0.5, -0.5, 0.5, 0.5)
+script = ExtResource("3_ywo6n")
+Use_IK_HandLeft = 0.0
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Door2/godot_rig/GeneralSkeleton" index="1"]
+transform = Transform3D(-1, -3.05406e-07, 0, 0, 0, 1, -3.05406e-07, 1, 0, 2.44604e-05, 0.964816, 0.00163609)
+bone_name = "Door_2"
+bone_idx = 45
+
+[node name="RemoteTransform3D" type="RemoteTransform3D" parent="Door2/godot_rig/GeneralSkeleton/BoneAttachment3D"]
+transform = Transform3D(3.27826e-07, 0, -1, -1, 0, -3.27826e-07, 0, 1, 0, 0.514024, -0.00463566, 0.042184)
+remote_path = NodePath("../../../../../CollisionShape3D")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Door2/godot_rig/GeneralSkeleton/BoneAttachment3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.900964, 2.75206e-07, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../Door2")
+tree_root = SubResource("AnimationNodeStateMachine_iypxa")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../Door2/AnimationPlayer")
+
+[editable path="Door2"]

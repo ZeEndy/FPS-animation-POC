@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dgwp1kj36s40e"
+path="res://.godot/imported/Rise Final.wav-f0c979ab0c9d15419c871354def78f0f.sample"
+
+[deps]
+
+source_file="res://Props/Dummy/Audio/Rise/Rise Final.wav"
+dest_files=["res://.godot/imported/Rise Final.wav-f0c979ab0c9d15419c871354def78f0f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

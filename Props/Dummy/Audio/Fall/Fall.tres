@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://bporltdlb1x8k"]
+
+[ext_resource type="AudioStream" uid="uid://b2ish7kc6ev1w" path="res://Props/Dummy/Audio/Fall/Fall 01.wav" id="1_fr7sm"]
+[ext_resource type="AudioStream" uid="uid://djfoqg0p13e5h" path="res://Props/Dummy/Audio/Fall/Fall 02.wav" id="2_ad1om"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource("1_fr7sm")
+stream_1/stream = ExtResource("2_ad1om")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c6q1jk5yklpe2"
+path="res://.godot/imported/Cock Foward 2.wav-6194b5871a6b1e19f291b01ae74ee2d2.sample"
+
+[deps]
+
+source_file="res://Items/P90/Audio/Reload 2/Cock Foward 2.wav"
+dest_files=["res://.godot/imported/Cock Foward 2.wav-6194b5871a6b1e19f291b01ae74ee2d2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

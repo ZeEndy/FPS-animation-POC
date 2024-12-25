@@ -1,0 +1,26 @@
+[remap]
+
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://bntc4ltncjli4"
+path="res://.godot/imported/Elevator.exr-b7354aa84d16c9f53f9a3ca749b504a4.ctexarray"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Props/Elevator/Elevator.exr"
+dest_files=["res://.godot/imported/Elevator.exr-b7354aa84d16c9f53f9a3ca749b504a4.ctexarray"]
+
+[params]
+
+compress/mode=3
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=1
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=1
+slices/vertical=1

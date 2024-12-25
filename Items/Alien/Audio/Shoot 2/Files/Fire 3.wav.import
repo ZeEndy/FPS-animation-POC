@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cdlnv7r110a3y"
+path="res://.godot/imported/Fire 3.wav-ba5dc8e5cc6e74dc13fb25906ec12963.sample"
+
+[deps]
+
+source_file="res://Items/Alien/Audio/Shoot 2/Files/Fire 3.wav"
+dest_files=["res://.godot/imported/Fire 3.wav-ba5dc8e5cc6e74dc13fb25906ec12963.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

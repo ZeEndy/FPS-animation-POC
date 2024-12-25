@@ -1,0 +1,11 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=4 format=3 uid="uid://blw01w53a0bvd"]
+
+[ext_resource type="AudioStream" uid="uid://cntm0e8co5sa7" path="res://Props/Door/Audio/Close 1.wav" id="1_d4py4"]
+[ext_resource type="AudioStream" uid="uid://ccpt2do25w7jj" path="res://Props/Door/Audio/Close 2.wav" id="2_r6bty"]
+[ext_resource type="AudioStream" uid="uid://bmxgr7k6j7w5x" path="res://Props/Door/Audio/Close 4.wav" id="3_jnw2t"]
+
+[resource]
+streams_count = 3
+stream_0/stream = ExtResource("1_d4py4")
+stream_1/stream = ExtResource("2_r6bty")
+stream_2/stream = ExtResource("3_jnw2t")

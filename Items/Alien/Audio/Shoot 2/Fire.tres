@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://dvwwc7cc65it5"]
+
+[ext_resource type="AudioStream" uid="uid://dl8vm2c8exobw" path="res://Items/Alien/Audio/Shoot 2/Files/Fire 1.wav" id="1_4jdyp"]
+[ext_resource type="AudioStream" uid="uid://ckh2qh3qak7re" path="res://Items/Alien/Audio/Shoot 2/Files/Fire 2.wav" id="2_rvq4o"]
+[ext_resource type="AudioStream" uid="uid://cdlnv7r110a3y" path="res://Items/Alien/Audio/Shoot 2/Files/Fire 3.wav" id="3_dhay3"]
+[ext_resource type="AudioStream" uid="uid://bmyemvy4exjq6" path="res://Items/Alien/Audio/Shoot 2/Files/Fire 4.wav" id="4_606ji"]
+[ext_resource type="AudioStream" uid="uid://cuhmvn5dq8fq6" path="res://Items/Alien/Audio/Shoot 2/Files/Fire 5.wav" id="5_1sbbn"]
+[ext_resource type="AudioStream" uid="uid://b4htxwx03alq0" path="res://Items/Alien/Audio/Shoot 2/Files/Fire 6.wav" id="6_fgn10"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_4jdyp")
+stream_1/stream = ExtResource("2_rvq4o")
+stream_2/stream = ExtResource("3_dhay3")
+stream_3/stream = ExtResource("4_606ji")
+stream_4/stream = ExtResource("5_1sbbn")
+stream_5/stream = ExtResource("6_fgn10")
