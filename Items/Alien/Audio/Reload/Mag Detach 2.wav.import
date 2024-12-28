@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bur80gi4k73kn"
+path="res://.godot/imported/Mag Detach 2.wav-2278c31b8f329eef7c0c5339ff3381b5.sample"
+
+[deps]
+
+source_file="res://Items/Alien/Audio/Reload/Mag Detach 2.wav"
+dest_files=["res://.godot/imported/Mag Detach 2.wav-2278c31b8f329eef7c0c5339ff3381b5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

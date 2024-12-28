@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cuk0y2r56eqiv"
+path="res://.godot/imported/Mag Tap.wav-ec99714dcafd5017c2e79a2c3188925c.sample"
+
+[deps]
+
+source_file="res://Items/Alien/Audio/Reload/Mag Tap.wav"
+dest_files=["res://.godot/imported/Mag Tap.wav-ec99714dcafd5017c2e79a2c3188925c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -29,7 +29,7 @@ func _init() -> void:
 		configfile.set_value("SETTINGS","MouseSens",MouseSens["value"])
 		configfile.set_value("SETTINGS","MVolume",MVolume["value"])
 		configfile.set_value("SETTINGS","SVolume",SVolume["value"])
-		configfile.set_value("SETTINGS","SVolume",MotionShake["value"])
+		configfile.set_value("SETTINGS","MotionShake",MotionShake["value"])
 		configfile.save("user://config.cfg")
 
 func save_settings():

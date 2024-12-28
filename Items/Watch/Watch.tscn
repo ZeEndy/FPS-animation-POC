@@ -141,6 +141,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="TextureRect" type="TextureRect" parent="SubViewport/Settings"]
 layout_mode = 1
@@ -172,7 +173,6 @@ AffectedSetting = "MouseSens"
 
 [node name="LABEL" type="Label" parent="SubViewport/Settings/Items/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_73ahh")
 theme_override_font_sizes/font_size = 80
 text = "MOUSE 
@@ -203,7 +203,6 @@ AffectedSetting = "MVolume"
 
 [node name="LABEL" type="Label" parent="SubViewport/Settings/Items/VBoxContainer2"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_73ahh")
 theme_override_font_sizes/font_size = 80
 text = "MASTER
@@ -235,7 +234,6 @@ AffectedSetting = "SVolume"
 
 [node name="LABEL" type="Label" parent="SubViewport/Settings/Items/VBoxContainer3"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_73ahh")
 theme_override_font_sizes/font_size = 80
 text = "SFX
@@ -268,7 +266,6 @@ AffectedSetting = "MotionShake"
 
 [node name="LABEL" type="Label" parent="SubViewport/Settings/Items/VBoxContainer4"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_73ahh")
 theme_override_font_sizes/font_size = 80
 text = "MOTION

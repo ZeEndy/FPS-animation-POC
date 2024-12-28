@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://ckxb3jwy7035m"]
+
+[ext_resource type="AudioStream" uid="uid://cgplqj2yv13hr" path="res://Items/Alien/Audio/Reload/Mag Detach 1.wav" id="1_lghfw"]
+[ext_resource type="AudioStream" uid="uid://bur80gi4k73kn" path="res://Items/Alien/Audio/Reload/Mag Detach 2.wav" id="2_atxrf"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource("1_lghfw")
+stream_1/stream = ExtResource("2_atxrf")

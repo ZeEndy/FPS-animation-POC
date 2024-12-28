@@ -287,7 +287,7 @@ process_thread_group = 0
 physics_interpolation_mode = 0
 auto_translate_mode = 0
 editor_description = ""
-transform = Transform3D(0.00673371, -0.965309, 0.261023, -0.0266487, 0.260763, 0.965035, -0.999622, -0.0134542, -0.0239683, 0.0185497, 0.17481, -0.00345745)
+transform = Transform3D(0.00672606, -0.964825, 0.262806, -0.0339867, 0.26244, 0.96435, -0.9994, -0.0154182, -0.031026, 0.0196642, 0.174669, -0.0151038)
 rotation_edit_mode = 0
 rotation_order = 2
 top_level = false
@@ -431,7 +431,7 @@ RotationAxis = 2
 flip = true
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="11"]
-transform = Transform3D(0.167359, 0.17793, 0.969842, -0.0444158, 0.979019, -0.174422, -0.989647, -0.0156741, 0.173108, -0.231322, -0.344754, 0.0118598)
+transform = Transform3D(0.167536, 0.177757, 0.969775, -0.0449796, 0.978969, -0.174542, -0.989682, -0.0144818, 0.173404, -0.232848, -0.344452, 0.01032)
 bone_name = "LeftHand"
 bone_idx = 10
 
@@ -441,7 +441,7 @@ visible = false
 mesh = SubResource("BoxMesh_h2mdd")
 
 [node name="BoneAttachment3D2" type="BoneAttachment3D" parent="Body/CameraHolder/Hands/godot_rig/GeneralSkeleton" index="12"]
-transform = Transform3D(0.92261, -0.126, 0.393523, -0.196038, -0.947665, 0.120707, 0.368669, -0.193276, -0.925271, -0.227821, -0.318419, 0.0172302)
+transform = Transform3D(0.923733, -0.13434, 0.387925, -0.19376, -0.951047, 0.0950618, 0.367084, -0.16868, -0.930773, -0.229152, -0.318285, 0.0149606)
 bone_name = "DEF-wrist.L"
 bone_idx = 26
 

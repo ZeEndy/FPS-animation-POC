@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ikvkneatiuic"
+path="res://.godot/imported/Mag Insert 2.wav-f6d2f172c87aac34e22857a23f051514.sample"
+
+[deps]
+
+source_file="res://Items/Alien/Audio/Reload/Mag Insert 2.wav"
+dest_files=["res://.godot/imported/Mag Insert 2.wav-f6d2f172c87aac34e22857a23f051514.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

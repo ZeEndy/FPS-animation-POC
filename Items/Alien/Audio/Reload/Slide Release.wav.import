@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcj0v7ixlg4oc"
+path="res://.godot/imported/Slide Release.wav-05bdcfadc57aade2920b6f7f3dad3914.sample"
+
+[deps]
+
+source_file="res://Items/Alien/Audio/Reload/Slide Release.wav"
+dest_files=["res://.godot/imported/Slide Release.wav-05bdcfadc57aade2920b6f7f3dad3914.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

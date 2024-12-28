@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://bn32j6cyglys3"]
+
+[ext_resource type="AudioStream" uid="uid://c7weqgshka87y" path="res://Items/Alien/Audio/Reload/Mag Insert 1.wav" id="1_qkqdu"]
+[ext_resource type="AudioStream" uid="uid://ikvkneatiuic" path="res://Items/Alien/Audio/Reload/Mag Insert 2.wav" id="2_q0sea"]
+
+[resource]
+streams_count = 2
+stream_0/stream = ExtResource("1_qkqdu")
+stream_1/stream = ExtResource("2_q0sea")
